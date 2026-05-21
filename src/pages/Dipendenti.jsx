@@ -4,8 +4,8 @@ import { supabase } from '../lib/supabase'
 import styles from './Dipendenti.module.css'
 import NuovoDipendenteModal from '../components/NuovoDipendenteModal'
 
-const REPARTI = ['tutti', 'vigna', 'cantina', 'ospitalita', 'amministrazione', 'altro']
-const repartoLabel = { tutti:'Tutti', vigna:'Vigna', cantina:'Cantina', ospitalita:'Ospitalità', amministrazione:'Amm.', altro:'Altro' }
+const REPARTI = ['tutti', 'vigna', 'cantina', 'ospitalita', 'cucina', 'marketing', 'hr', 'amministrazione', 'altro']
+const repartoLabel = { tutti:'Tutti', vigna:'Vigna', cantina:'Cantina', ospitalita:'Ospitalità', cucina:'Cucina', marketing:'Marketing', hr:'HR', amministrazione:'Amm.', altro:'Altro' }
 
 export default function Dipendenti() {
   const [dipendenti, setDipendenti] = useState([])
