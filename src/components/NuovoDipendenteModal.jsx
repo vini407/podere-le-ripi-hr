@@ -2,8 +2,8 @@ import { useState } from 'react'
 import { supabase } from '../lib/supabase'
 import styles from './Modal.module.css'
 
-const REPARTI = ['vigna','cantina','ospitalita','amministrazione','altro']
-const repartoLabel = { vigna:'Vigna', cantina:'Cantina', ospitalita:'Ospitalità', amministrazione:'Amministrazione', altro:'Altro' }
+const REPARTI = ['vigna','cantina','ospitalita','cucina','marketing','hr','amministrazione','altro']
+const repartoLabel = { vigna:'Vigna', cantina:'Cantina', ospitalita:'Ospitalità', cucina:'Cucina', marketing:'Marketing', hr:'HR', amministrazione:'Amministrazione', altro:'Altro' }
 
 export default function NuovoDipendenteModal({ onClose, onSaved }) {
   const [form, setForm] = useState({ nome:'', cognome:'', email:'', ruolo:'', reparto:'vigna', livello_contrattuale:1, data_assunzione:'', stipendio_base:'', note:'' })
