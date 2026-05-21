@@ -1,0 +1,54 @@
+.page { padding: 2rem; max-width: 860px; margin: 0 auto; }
+
+.back { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; color: #aaa; display: inline-flex; align-items: center; margin-bottom: 1.5rem; transition: color 0.2s; }
+.back:hover { color: var(--earth); }
+
+.topCard { background: white; border: 0.5px solid var(--border); border-radius: 10px; padding: 1.5rem; display: flex; align-items: center; gap: 1.25rem; margin-bottom: 1.5rem; flex-wrap: wrap; }
+
+.avatarLg { width: 60px; height: 60px; border-radius: 50%; background: var(--cream); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-family: 'Cormorant Garamond', serif; font-size: 22px; color: var(--earth); flex-shrink: 0; }
+
+.topInfo { flex: 1; }
+.topInfo h2 { font-size: 28px; color: var(--dark); margin-bottom: 4px; }
+.topRole { font-size: 13px; color: #888; margin-bottom: 2px; }
+.topSince { font-size: 12px; color: #bbb; }
+
+.topActions { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; }
+
+.accessBadge { font-size: 12px; padding: 4px 10px; border-radius: 20px; }
+.accessOn { background: #EAF3DE; color: #3B6D11; }
+.accessOff { background: #F1EFE8; color: #888; }
+
+.toggleBtn { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; border: 0.5px solid var(--earth); background: none; color: var(--earth); padding: 6px 12px; border-radius: 4px; transition: all 0.2s; }
+.toggleBtn:hover { background: var(--earth); color: white; }
+
+.tabs { display: flex; gap: 4px; margin-bottom: 1.5rem; }
+.tab { font-size: 12px; letter-spacing: 0.5px; padding: 7px 16px; border-radius: 6px; border: 0.5px solid var(--border); background: none; color: #888; transition: all 0.2s; }
+.tab:hover { color: var(--dark); }
+.tabActive { background: var(--dark); color: var(--cream); border-color: var(--dark); }
+
+.infoGrid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+.infoField { background: white; border: 0.5px solid var(--border); border-radius: 8px; padding: 1rem 1.25rem; }
+.infoLabel { font-size: 11px; color: #aaa; letter-spacing: 0.5px; margin-bottom: 5px; }
+.infoVal { font-size: 14px; color: var(--dark); font-weight: 400; }
+
+.tabHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.tabSub { font-size: 12px; color: #aaa; }
+.addBtn { font-size: 11px; letter-spacing: 1px; text-transform: uppercase; background: var(--earth); color: white; border: none; padding: 7px 14px; border-radius: 4px; transition: opacity 0.2s; }
+.addBtn:hover { opacity: 0.85; }
+
+.attGrid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 10px; }
+.attCard { background: white; border: 0.5px solid var(--border); border-radius: 8px; padding: 1rem; }
+.attType { font-size: 13px; font-weight: 500; margin-bottom: 4px; }
+.attName { font-size: 12px; color: #666; margin-bottom: 8px; }
+.attDates { font-size: 11px; color: #aaa; display: flex; flex-direction: column; gap: 2px; margin-bottom: 8px; }
+.attStatus { font-size: 11px; padding: 3px 8px; border-radius: 20px; display: inline-block; }
+
+.timeline { display: flex; flex-direction: column; gap: 0; }
+.timelineItem { display: flex; gap: 1rem; position: relative; padding-bottom: 1.5rem; }
+.timelineDot { width: 10px; height: 10px; border-radius: 50%; background: var(--gold); flex-shrink: 0; margin-top: 4px; }
+.timelineLine { position: absolute; left: 4.5px; top: 14px; bottom: 0; width: 1px; background: var(--border); }
+.timelineContent { flex: 1; }
+.timelineDate { font-size: 11px; color: #bbb; margin-bottom: 2px; }
+.timelineTitle { font-size: 14px; font-weight: 500; color: var(--dark); margin-bottom: 3px; }
+.timelineSub { font-size: 13px; color: #666; margin-bottom: 3px; }
+.timelineNote { font-size: 12px; color: #aaa; font-style: italic; }

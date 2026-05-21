@@ -1,0 +1,122 @@
+.page { padding: 2rem; max-width: 900px; margin: 0 auto; }
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 2rem;
+}
+
+.header h2 {
+  font-size: 36px;
+  color: var(--dark);
+  margin-bottom: 2px;
+}
+
+.sub { font-size: 13px; color: #aaa; }
+
+.newBtn {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  background: var(--dark);
+  color: var(--cream);
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+.newBtn:hover { opacity: 0.8; }
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 2rem;
+}
+
+.stat {
+  background: white;
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+}
+
+.statLabel { font-size: 11px; color: #aaa; letter-spacing: 0.5px; margin-bottom: 6px; }
+
+.statVal {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 36px;
+  font-weight: 300;
+  color: var(--earth);
+  line-height: 1;
+}
+
+.section { margin-bottom: 2rem; }
+
+.sectionLabel {
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--terracotta);
+  margin-bottom: 0.75rem;
+}
+
+.alert {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.875rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  border-left: 3px solid;
+}
+
+.alertRed { background: #FEF5F5; border-color: #E24B4A; }
+.alertAmber { background: #FEFAF3; border-color: #EF9F27; }
+
+.alertTitle { font-size: 13px; font-weight: 500; color: var(--dark); margin-bottom: 2px; }
+.alertSub { font-size: 12px; color: #888; }
+
+.alertLink {
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: var(--earth);
+  border: 0.5px solid var(--border);
+  padding: 4px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.alertLink:hover { background: var(--earth); color: white; border-color: var(--earth); }
+
+.allGood {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 1.25rem;
+  background: #F5FAF0;
+  border-radius: 6px;
+  color: var(--sage);
+  font-size: 14px;
+}
+
+.quickGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+}
+
+.quickCard {
+  background: white;
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.2s;
+}
+.quickCard:hover { border-color: var(--gold); }
+
+.quickLabel { font-size: 14px; font-weight: 500; color: var(--dark); margin-bottom: 2px; }
+.quickSub { font-size: 12px; color: #aaa; }
